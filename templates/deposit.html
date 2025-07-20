@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit – S n A Bank</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2 class="brand"><span class="highlight">S</span> <span class="and">&</span> <span class="highlight">A</span> <span class="small">BANK</span></h2>
+        <h3>Deposit Money</h3>
+
+        <div id="deposit-section">
+            <input type="text" id="fingerprint" placeholder="Enter Fingerprint Hash">
+            <button id="authenticate">Authenticate</button>
+            <input type="number" id="amount" placeholder="Amount to Deposit">
+            <button id="confirm-deposit">Confirm Deposit</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

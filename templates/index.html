@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S & A Bank</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2 class="brand"><span class="highlight">S</span> <span class="and">&</span> <span class="highlight">A</span> <span class="small">BANK</span></h2>
+
+        <div id="auth-section">
+            <input type="text" id="fingerprint" placeholder="Enter Fingerprint Hash">
+            <button id="authenticate">Authenticate</button>
+        </div>
+
+        <div id="card-selection" style="display: none;">
+            <h3>Select a Card</h3>
+            <ul id="cards-list"></ul>
+        </div>
+
+        <div id="transaction-options" style="display: none;">
+            <h3>Select an Option</h3>
+            <button id="check-balance">Check Balance</button>
+            <button id="withdraw">Withdraw</button>
+            <button id="deposit">Deposit</button>
+        </div>
+
+        <div id="pin-section" style="display: none;">
+            <h3>Enter PIN</h3>
+            <input type="password" id="pin" placeholder="Enter 4-digit PIN" maxlength="4" pattern="\d{4}">
+            <button id="confirm-pin">Confirm</button>
+        </div>
+
+        <div id="amount-section" style="display: none;">
+            <h3>Enter Amount</h3>
+            <input type="number" id="amount" placeholder="Enter Amount">
+            <button id="confirm-amount">Next</button>
+        </div>
+
+        <div id="balance-section" style="display: none;">
+            <h3>Account Balance</h3>
+            <p id="balance-display"></p>
+        </div>
+
+        <div id="cancel-section" style="display: none;">
+            <button id="terminate-transaction" class="terminate-btn">Terminate Transaction</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

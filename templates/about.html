@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About – S n A Bank</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2 class="brand"><span class="highlight">S</span> <span class="and">&</span> <span class="highlight">A</span> <span class="small">BANK</span></h2>
+        <h3>About the ATM System</h3>
+        <p>This ATM system allows you to authenticate using fingerprint hashes and perform various transactions such as withdrawals, deposits, and balance checks.</p>
+        <ul>
+            <li>Authentication with fingerprint hash</li>
+            <li>Withdraw funds</li>
+            <li>Deposit funds</li>
+            <li>Check account balance</li>
+        </ul>
+        <a href="{{ url_for('home') }}">← Back to Home</a>
+    </div>
+</body>
+</html>
