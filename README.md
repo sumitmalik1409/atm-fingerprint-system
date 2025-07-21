@@ -36,8 +36,18 @@ atm-fingerprint-system/
 ├── static/
 │ ├── styles.css
 │ └── script.js
+├── database.sql
 └── README.md
 
+---
+
+## 🗃️ Database Setup
+
+1. Open MySQL Workbench
+2. Create a schema named `atm_system`
+3. Open `database.sql` and run the script
+4. It will create two tables: `users` and `cards`, with dummy data
+5. Make sure your `app.py` connects using the same database name and credentials
 
 ---
 
