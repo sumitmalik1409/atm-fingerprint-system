@@ -24,7 +24,7 @@ def get_db_connection():
     return mysql.connector.connect(
         host="localhost",
         user="root",
-        password="Malik@123",
+        password="your password",
         database="atm_system"
     )
 
