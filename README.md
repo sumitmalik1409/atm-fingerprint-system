@@ -54,7 +54,7 @@ atm-fingerprint-system/
 ## 👨‍💻 Built By
 
 - Sumit Malik
-- Abbas Ali
+- Abbas Majeed
 
 ---
 
