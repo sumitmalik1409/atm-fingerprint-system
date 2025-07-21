@@ -53,15 +53,19 @@ atm-fingerprint-system/
 1. Clone the repo:
 ```bash
 git clone https://github.com/sumitmalik1409/atm-fingerprint-system.git
+```
 
 2. Move into the folder:
 ```bash
 cd atm-fingerprint-system
+```
 
 3. Run the app:
 ```bash
 python app.py
+```
 
 4. Open in your browser:
 ```cpp
 http://127.0.0.1:5000/
+```
